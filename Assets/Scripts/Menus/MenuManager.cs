@@ -20,12 +20,7 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        IntroScreen();
-    }
-
-    void IntroScreen()
-    {
-        if (introScreen == true)
+        if (introScreen.activeSelf)
         {
             if (Input.anyKeyDown)
             {
