@@ -19,6 +19,9 @@ public class InputManager : MonoBehaviour
         _look = GetComponent<PlayerLook>();
 
         onFoot.Jump.performed += ctx => _motor.Jump();
+
+        onFoot.Crouch.performed += ctx => _motor.Crouch();
+        onFoot.Sprint.performed += ctx => _motor.Sprint();
     }
 
 
