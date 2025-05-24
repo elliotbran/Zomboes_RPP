@@ -8,7 +8,7 @@ public class PlayerMotor : MonoBehaviour
     Vector3 _playerVelocity;
 
     public float speed = 5f;
-    public float gravity = -9.81f;
+    public float gravity = -65; // -9.81 default
     public float jumpHeight = 3f;
 
     bool _isGrounded;
