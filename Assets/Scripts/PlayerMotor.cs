@@ -17,6 +17,10 @@ public class PlayerMotor : MonoBehaviour
     float _crouchTimer = 1;
     bool _lerpCrouch = false;
     bool _sprinting = false;
+
+    private Vector3 currentVelocity = Vector3.zero;
+    public float accelerationTime = 0.1f; // Tiempo para alcanzar la velocidad objetivo
+
     void Start()
     {
         _controller = GetComponent<CharacterController>();
@@ -48,16 +52,22 @@ public class PlayerMotor : MonoBehaviour
     //Receives the input from the InputManager.cs and apply them to the character controller
     public void ProcessMove(Vector2 input)
     {
-        Vector3 moveDirection = Vector3.zero;
-        moveDirection.x = input.x;
-        moveDirection.z = input.y;
-        _controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
+        Vector3 targetDirection = new Vector3(input.x, 0, input.y);
+        Vector3 desiredMove = transform.TransformDirection(targetDirection);
+
+        // Suaviza la velocidad
+        Vector3 smoothedMove = Vector3.SmoothDamp(currentVelocity, desiredMove * speed, ref currentVelocity, accelerationTime);
+
+        _controller.Move(smoothedMove * Time.deltaTime);
+
+        // Gravedad
         _playerVelocity.y += gravity * Time.deltaTime;
         if (_isGrounded && _playerVelocity.y < 0)
             _playerVelocity.y = -2f;
         _controller.Move(_playerVelocity * Time.deltaTime);
         //Debug.Log(_playerVelocity.y);
     }
+
 
     public void Jump()
     {
@@ -78,8 +88,8 @@ public class PlayerMotor : MonoBehaviour
     {
         _sprinting = !_sprinting;
         if (_sprinting )
-            speed = 10;
+            speed = 15;
         else
-            speed = 5;
+            speed = 10;
     }
 }
