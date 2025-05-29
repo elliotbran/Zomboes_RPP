@@ -7,7 +7,6 @@ public class EnemySpawn : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public Transform[] spawnsPoints;
-    public float spawnInterval = 7;
 
     // Start is called before the first frame update
     void Start()

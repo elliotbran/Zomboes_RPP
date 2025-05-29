@@ -15,6 +15,18 @@ public class EnemyController : MonoBehaviour
 
     public int life = 100;
 
+    private void Start()
+    {
+        iA = GetComponent<NavMeshAgent>();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            objective = player.transform;
+        }
+
+        velocity = Random.Range(2f, 8f);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -37,6 +49,12 @@ public class EnemyController : MonoBehaviour
             iA.speed = velocity;
             iA.SetDestination(objective.position);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(iA.transform.position, range);
     }
 
 }
