@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
@@ -12,10 +13,12 @@ public class Gun : MonoBehaviour
 
     public int defaultMagazine;
     public int actualMagazine;
+    public int inventoryAmmunition;
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
+    public GameObject ammunitionHud;
 
     private float nextTimeToFire = 0f;
 
@@ -36,6 +39,8 @@ public class Gun : MonoBehaviour
         {
             Reload();
         }
+
+        ammunitionHud.gameObject.GetComponent<TextMeshProUGUI>().text = actualMagazine.ToString() + " / " + inventoryAmmunition.ToString();
     }
 
     void Shoot()
@@ -65,11 +70,21 @@ public class Gun : MonoBehaviour
 
     void Reload()
     {
-        if(actualMagazine != defaultMagazine)
+        if(actualMagazine != defaultMagazine && inventoryAmmunition > 0)
         {
             int diff = defaultMagazine - actualMagazine;
-            actualMagazine += diff;
-            Debug.Log("recargando " + diff.ToString() + " balas");
+            if (diff <= inventoryAmmunition)
+            {
+                actualMagazine += diff;
+                inventoryAmmunition -= diff;
+                Debug.Log("recargando " + diff.ToString() + " balas");
+            }
+            else
+            {
+                actualMagazine += inventoryAmmunition;
+                inventoryAmmunition = 0;
+            }
+            
         }
         
     }
