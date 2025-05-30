@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
@@ -12,10 +13,12 @@ public class Gun : MonoBehaviour
 
     public int defaultMagazine;
     public int actualMagazine;
+    public int inventoryAmmunition;
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
+    public GameObject ammunitionHud;
 
     private float nextTimeToFire = 0f;
 
@@ -27,7 +30,7 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire && actualMagazine > 0)//Si queremos hacer un arma automatica solo hay que quitar el "Down" de "GetButtonDown"
         {
-            nextTimeToFire = Time.time + 1f/fireRate;
+            nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
             actualMagazine--;
         }
@@ -36,13 +39,15 @@ public class Gun : MonoBehaviour
         {
             Reload();
         }
+
+        ammunitionHud.gameObject.GetComponent<TextMeshProUGUI>().text = actualMagazine.ToString() + " / " + inventoryAmmunition.ToString();
     }
 
     void Shoot()
     {
         RaycastHit hit;
 
-        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
             Debug.Log("Disparo");
@@ -53,7 +58,7 @@ public class Gun : MonoBehaviour
                 target.TakeDamage(damage);
             }
 
-            if(hit.rigidbody != null)
+            if (hit.rigidbody != null)
             {
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
@@ -65,12 +70,22 @@ public class Gun : MonoBehaviour
 
     void Reload()
     {
-        if(actualMagazine != defaultMagazine)
+        if (actualMagazine != defaultMagazine && inventoryAmmunition > 0)
         {
             int diff = defaultMagazine - actualMagazine;
-            actualMagazine += diff;
-            Debug.Log("recargando " + diff.ToString() + " balas");
+            if (diff <= inventoryAmmunition)
+            {
+                actualMagazine += diff;
+                inventoryAmmunition -= diff;
+                Debug.Log("recargando " + diff.ToString() + " balas");
+            }
+            else
+            {
+                actualMagazine += inventoryAmmunition;
+                inventoryAmmunition = 0;
+            }
+
         }
-        
+
     }
 }
