@@ -6201,6 +6201,8 @@ MonoBehaviour:
   range: 100
   fireRate: 15
   impactForce: 30
+  defaultMagazine: 10
+  actualMagazine: 0
   fpsCam: {fileID: 170718413}
   muzzleFlash: {fileID: 1531989636}
   impactEffect: {fileID: 0}
