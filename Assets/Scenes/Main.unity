@@ -217,10 +217,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -271,6 +301,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -578,6 +613,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225246059}
   m_CullTransparentMesh: 1
+--- !u!1001 &255017142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1136100231}
+    m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Name
+      value: SM_irontorch_002_AmbienceFX (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -102.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000018328426
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2071281887c6f514388923e0ee4bae72, type: 3}
+--- !u!4 &255017143 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
+    type: 3}
+  m_PrefabInstance: {fileID: 255017142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &281865446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
@@ -592,10 +736,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -647,6 +821,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -667,7 +846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363868285}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pruebas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,10 +963,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -838,6 +1047,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -963,10 +1177,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -1017,6 +1261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1093,7 +1342,9 @@ PrefabInstance:
       value: _v2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7759661086338373389, guid: 96e02fbb59fe79c458cba9c3d2cccfd3, type: 3}
+    - {fileID: 2540691826009583576, guid: 96e02fbb59fe79c458cba9c3d2cccfd3, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 9142924457717146202, guid: 96e02fbb59fe79c458cba9c3d2cccfd3,
         type: 3}
@@ -1109,10 +1360,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -1163,6 +1444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1428,10 +1714,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -1483,6 +1799,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1497,7 +1818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1136100231}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Scenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1519,6 +1840,7 @@ Transform:
   m_Children:
   - {fileID: 1551350287}
   - {fileID: 1017174086}
+  - {fileID: 255017143}
   - {fileID: 281865446}
   - {fileID: 182924623}
   - {fileID: 2139686961}
@@ -1543,10 +1865,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -1598,6 +1950,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1617,10 +1974,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -1671,6 +2058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2105,7 +2497,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4d08246fd71a698489b58962ec5a021a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2352,10 +2744,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -2407,6 +2829,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2426,10 +2853,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -2480,6 +2937,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7336,10 +7798,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -7390,6 +7882,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7542,10 +8039,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -7597,6 +8124,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7610,10 +8142,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -7664,6 +8226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7971,10 +8538,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1136100231}
     m_Modifications:
+    - target: {fileID: 758445758339349707, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759002124998, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445759826635934, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760031088573, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 758445760062545767, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
       value: SM_irontorch_002_AmbienceFX (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6682108984950305212, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
@@ -8026,6 +8623,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7574157907219272182, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8045,7 +8647,7 @@ GameObject:
   - component: {fileID: 2117283023}
   - component: {fileID: 2117283022}
   - component: {fileID: 2117283026}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
