@@ -19,6 +19,11 @@ public class Gun : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
     public GameObject ammunitionHud;
+    public GameObject muzzleFlashParticle;
+    public Transform muzzlePoint;
+
+    public AudioSource vfxPlayer;
+    public AudioClip gunShot;
 
     private float nextTimeToFire = 0f;
 
@@ -47,6 +52,8 @@ public class Gun : MonoBehaviour
     {
         RaycastHit hit;
 
+        vfxPlayer.PlayOneShot(gunShot);
+
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
@@ -63,8 +70,19 @@ public class Gun : MonoBehaviour
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
 
-            //GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); //falta hacer la animacion de disparo
-            //Destroy(impactGO, 2f);
+            if (muzzleFlashParticle != null)
+            {
+                if (muzzlePoint != null)
+                {
+                    Instantiate(muzzleFlashParticle, muzzlePoint.position, muzzlePoint.rotation);
+                }
+                else
+                {
+                    Debug.LogWarning("Muzzle Point not set. Instantiating muzzle flash at camera position.");
+                    Instantiate(muzzleFlashParticle, fpsCam.transform.position + fpsCam.transform.forward * 0.5f, fpsCam.transform.rotation);
+                }
+            }
+
         }
     }
 
