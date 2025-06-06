@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     public NavMeshAgent iA;
     public float range;
     public float distance;
-    public bool persiguiendo;
+    public bool chasing;
 
     public int life = 100;
 
@@ -34,18 +34,18 @@ public class EnemyController : MonoBehaviour
         distance = Vector3.Distance(iA.transform.position, objective.position);
         if (distance < range)
         {
-            persiguiendo = true;
+            chasing = true;
         }
         else if (distance > range + 3)
         {
-            persiguiendo = false;
+            chasing = false;
         }
 
-        if (persiguiendo == false)
+        if (chasing == false)
         {
             iA.speed = 0;
         }
-        else if (persiguiendo == true)
+        else if (chasing == true)
         {
             iA.speed = velocity;
             iA.SetDestination(objective.position);
