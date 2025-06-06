@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-
+    public Animator gunAnim;
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
@@ -31,6 +31,7 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire && actualMagazine > 0)//Si queremos hacer un arma automatica solo hay que quitar el "Down" de "GetButtonDown"
         {
             nextTimeToFire = Time.time + 1f / fireRate;
+            gunAnim.SetTrigger("Fire");
             Shoot();
             actualMagazine--;
         }
@@ -75,6 +76,7 @@ public class Gun : MonoBehaviour
             int diff = defaultMagazine - actualMagazine;
             if (diff <= inventoryAmmunition)
             {
+                gunAnim.SetTrigger("Reload");
                 actualMagazine += diff;
                 inventoryAmmunition -= diff;
                 Debug.Log("recargando " + diff.ToString() + " balas");
