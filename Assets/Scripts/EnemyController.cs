@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -48,6 +49,39 @@ public class EnemyController : MonoBehaviour
         {
             iA.speed = velocity;
             iA.SetDestination(objective.position);
+        }
+
+        if (life <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void TakeDamage(int amount)
+    {
+        life -= amount;
+        Debug.Log("Enemigo dañado, Vida restante: " + life);
+    }
+
+    void Die()
+    {
+        if (RoundManager.instance != null)
+        {
+            RoundManager.instance.EnemyKilled();
+        }
+
+        Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Player_Health player_Health = collision.gameObject.GetComponent<Player_Health>();
+            if (player_Health != null)
+            {
+                player_Health.TakeDamage(20);
+            }
         }
     }
 

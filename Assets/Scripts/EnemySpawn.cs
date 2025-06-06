@@ -13,6 +13,7 @@ public class EnemySpawn : MonoBehaviour
     {
         foreach (Transform spawn in spawnsPoints)
         {
+            Debug.Log("Trying to spawn at: " + spawn.position);
             SpawnEnemyAt(spawn.position);
         }
     }
@@ -22,7 +23,12 @@ public class EnemySpawn : MonoBehaviour
         NavMeshHit hit;
         if (NavMesh.SamplePosition(position, out hit, 2.0f, NavMesh.AllAreas))
         {
+            Debug.Log("Spawned enemy at: " + hit.position);
             GameObject enemy = Instantiate(enemyPrefab, hit.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.LogWarning("No valid NavMesh position near: " + position);
         }
     }
 }

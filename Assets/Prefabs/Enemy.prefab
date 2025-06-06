@@ -118,9 +118,10 @@ GameObject:
   - component: {fileID: 8786243571077950877}
   - component: {fileID: 5475874316272858209}
   - component: {fileID: 2396417846276607269}
+  - component: {fileID: 3521294079831410247}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,7 +180,30 @@ MonoBehaviour:
     type: 3}
   velocity: 2
   iA: {fileID: 5475874316272858209}
-  range: 13
+  range: 55.5
   distance: 1.29
   persiguiendo: 1
-  life: 100
+  life: 30
+--- !u!136 &3521294079831410247
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351290930702550749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

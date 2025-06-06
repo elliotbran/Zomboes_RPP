@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -29,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     float _horizontalInput;
     float _verticalInput;
 
+    public int maxHealth = 60;
+    public int currentHealth;
+
     Vector3 _moveDirection;
 
     Rigidbody _rb;
@@ -38,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         _rb.freezeRotation = true;
 
         readyToJump = true;
+
+        currentHealth = maxHealth;
     }
 
     
@@ -77,6 +83,23 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        Debug.Log("Player Health: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player muerto");
+        Time.timeScale = 0;
+    }
+
     void MovePlayer()
     {
         //calculate movement direction
@@ -90,6 +113,14 @@ public class PlayerMovement : MonoBehaviour
         // in air
         else if(!_grounded)
             _rb.AddForce(_moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(20);
+        }
     }
 
     void SpeedControl()

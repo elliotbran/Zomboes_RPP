@@ -60,10 +60,10 @@ public class Gun : MonoBehaviour
             Debug.Log(hit.transform.name);
             Debug.Log("Disparo");
 
-            Target target = hit.transform.GetComponent<Target>();
-            if (target != null)
+            EnemyController enemyController = hit.transform.GetComponentInParent<EnemyController>();
+            if (enemyController != null)
             {
-                target.TakeDamage(damage);
+                enemyController.TakeDamage((int)damage);
             }
 
             if (hit.rigidbody != null)
