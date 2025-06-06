@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     public int currentHealth;
 
     Vector3 _moveDirection;
+    public GameObject deadscreen;
 
     Rigidbody _rb;
     void Start()
@@ -98,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Player muerto");
         Time.timeScale = 0;
+        deadscreen.SetActive(true);
     }
 
     void MovePlayer()
