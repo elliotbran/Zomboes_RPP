@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-
+    public Animator gunAnim;
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
@@ -19,6 +19,11 @@ public class Gun : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
     public GameObject ammunitionHud;
+    public GameObject muzzleFlashParticle;
+    public Transform muzzlePoint;
+
+    public AudioSource vfxPlayer;
+    public AudioClip gunShot;
 
     private float nextTimeToFire = 0f;
 
@@ -31,6 +36,7 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire && actualMagazine > 0)//Si queremos hacer un arma automatica solo hay que quitar el "Down" de "GetButtonDown"
         {
             nextTimeToFire = Time.time + 1f / fireRate;
+            gunAnim.SetTrigger("Fire");
             Shoot();
             actualMagazine--;
         }
@@ -47,15 +53,17 @@ public class Gun : MonoBehaviour
     {
         RaycastHit hit;
 
+        vfxPlayer.PlayOneShot(gunShot);
+
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
             Debug.Log("Disparo");
 
-            Target target = hit.transform.GetComponent<Target>();
-            if (target != null)
+            EnemyController enemyController = hit.transform.GetComponentInParent<EnemyController>();
+            if (enemyController != null)
             {
-                target.TakeDamage(damage);
+                enemyController.TakeDamage((int)damage);
             }
 
             if (hit.rigidbody != null)
@@ -63,8 +71,19 @@ public class Gun : MonoBehaviour
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
 
-            //GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); //falta hacer la animacion de disparo
-            //Destroy(impactGO, 2f);
+            if (muzzleFlashParticle != null)
+            {
+                if (muzzlePoint != null)
+                {
+                    Instantiate(muzzleFlashParticle, muzzlePoint.position, muzzlePoint.rotation);
+                }
+                else
+                {
+                    Debug.LogWarning("Muzzle Point not set. Instantiating muzzle flash at camera position.");
+                    Instantiate(muzzleFlashParticle, fpsCam.transform.position + fpsCam.transform.forward * 0.5f, fpsCam.transform.rotation);
+                }
+            }
+
         }
     }
 
@@ -75,6 +94,7 @@ public class Gun : MonoBehaviour
             int diff = defaultMagazine - actualMagazine;
             if (diff <= inventoryAmmunition)
             {
+                gunAnim.SetTrigger("Reload");
                 actualMagazine += diff;
                 inventoryAmmunition -= diff;
                 Debug.Log("recargando " + diff.ToString() + " balas");

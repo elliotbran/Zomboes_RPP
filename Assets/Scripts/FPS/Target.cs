@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    public float health = 50;
+    public float health = 30;
 
     public void TakeDamage(float amount)
     {
