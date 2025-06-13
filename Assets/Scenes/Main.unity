@@ -198,15 +198,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d472e6e3548b0449c16e214e475ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAnim: {fileID: 527135675}
   walkSpeed: 7
   sprintSpeed: 12
   groundDrag: 5
   jumpForce: 12
   jumpCooldown: 0.25
   airMultiplier: 0.4
+  crouchSpeed: 3.5
+  crouchYScale: 0.5
   jumpKey: 32
   sprintKey: 304
+  crouchKey: 99
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
@@ -215,6 +217,7 @@ MonoBehaviour:
   maxHealth: 60
   currentHealth: 0
   deadscreen: {fileID: 1525530214}
+  playerAnim: {fileID: 527135675}
   state: 0
 --- !u!1001 &126773540
 PrefabInstance:
@@ -520,7 +523,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.851, y: 0.017}
   m_AnchorMax: {x: 0.98952085, y: 0.090222225}
-  m_AnchoredPosition: {x: 33, y: -15.312622}
+  m_AnchoredPosition: {x: 33, y: -15.3125}
   m_SizeDelta: {x: -66, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &225246061
@@ -653,6 +656,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5544127315039439571, guid: 2071281887c6f514388923e0ee4bae72,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
     - target: {fileID: 6336650555541744390, guid: 2071281887c6f514388923e0ee4bae72,
         type: 3}
       propertyPath: m_Name
