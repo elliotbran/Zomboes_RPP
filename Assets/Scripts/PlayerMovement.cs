@@ -8,7 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public Animator playerAnim;
 
     [Header("Movement")]
-    public float moveSpeed;
+    private float moveSpeed;
+    public float walkSpeed;
+    public float sprintSpeed;
 
     public float groundDrag;
 
@@ -19,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -37,6 +40,14 @@ public class PlayerMovement : MonoBehaviour
     public GameObject deadscreen;
 
     Rigidbody _rb;
+
+    public MovementState state;
+    public enum MovementState
+    {
+        walking,
+        sprinting,
+        air
+    }
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -55,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         PlayerInput();
         SpeedControl();
+        StateHandler();
 
         // handle drag
         if ( _grounded )
@@ -102,6 +114,28 @@ public class PlayerMovement : MonoBehaviour
         deadscreen.SetActive(true);
     }
 
+    void StateHandler()
+    {
+        // Mode - Sprinting
+        if(_grounded && Input.GetKey(sprintKey))
+        {
+            state = MovementState.sprinting;
+            moveSpeed = sprintSpeed;
+        }
+
+        // Mode - Walking
+        else if(_grounded)
+        {
+            state = MovementState.walking;
+            moveSpeed = walkSpeed;
+        }
+
+        // Mode - Air
+        else
+        {
+            state = MovementState.air;
+        }
+    }
     void MovePlayer()
     {
         //calculate movement direction
