@@ -11,6 +11,8 @@ public class PlayerCamera : MonoBehaviour
 
     float _xRotation;
     float _yRotation;
+
+    public PlayerMovement playerMovement; // Reference to Player_Health script
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -30,5 +32,12 @@ public class PlayerCamera : MonoBehaviour
         //rotate cam and orientation
         transform.rotation = Quaternion.Euler(_xRotation, _yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, _yRotation, 0);
+
+        //dead player
+        if(playerMovement.currentHealth <= 0)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }

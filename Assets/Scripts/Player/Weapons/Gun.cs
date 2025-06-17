@@ -24,6 +24,7 @@ public class Gun : MonoBehaviour
 
     public AudioSource vfxPlayer;
     public AudioClip gunShot;
+    public AudioClip reload;
 
     private float nextTimeToFire = 0f;
 
@@ -36,7 +37,6 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire && actualMagazine > 0)//Si queremos hacer un arma automatica solo hay que quitar el "Down" de "GetButtonDown"
         {
             nextTimeToFire = Time.time + 1f / fireRate;
-            gunAnim.SetTrigger("Fire");
             Shoot();
             actualMagazine--;
         }
@@ -53,7 +53,8 @@ public class Gun : MonoBehaviour
     {
         RaycastHit hit;
 
-        vfxPlayer.PlayOneShot(gunShot);
+        gunAnim.SetTrigger("Fire");
+        vfxPlayer.PlayOneShot(gunShot, 0.3f);
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -89,6 +90,7 @@ public class Gun : MonoBehaviour
 
     void Reload()
     {
+        vfxPlayer.PlayOneShot(reload, 0.3f);
         if (actualMagazine != defaultMagazine && inventoryAmmunition > 0)
         {
             int diff = defaultMagazine - actualMagazine;

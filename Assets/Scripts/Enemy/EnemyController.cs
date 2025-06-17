@@ -80,7 +80,7 @@ public class EnemyController : MonoBehaviour
             Player_Health player_Health = collision.gameObject.GetComponent<Player_Health>();
             if (player_Health != null)
             {
-                player_Health.TakeDamage(20);
+                player_Health.TakeDamage(40);
             }
         }
     }
