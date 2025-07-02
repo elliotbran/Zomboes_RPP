@@ -524,7 +524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.851, y: 0.017}
   m_AnchorMax: {x: 0.98952085, y: 0.090222225}
-  m_AnchoredPosition: {x: 33, y: -15.312561}
+  m_AnchoredPosition: {x: 33, y: -15.3125}
   m_SizeDelta: {x: -66, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &225246061
@@ -4275,9 +4275,9 @@ MonoBehaviour:
   range: 100
   fireRate: 15
   impactForce: 30
-  defaultMagazine: 10
+  defaultMagazine: 8
   actualMagazine: 0
-  inventoryAmmunition: 60
+  inventoryAmmunition: 32
   fpsCam: {fileID: 170718413}
   muzzleFlash: {fileID: 0}
   impactEffect: {fileID: 0}

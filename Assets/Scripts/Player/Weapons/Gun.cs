@@ -90,12 +90,12 @@ public class Gun : MonoBehaviour
 
     void Reload()
     {
-        vfxPlayer.PlayOneShot(reload, 0.3f);
         if (actualMagazine != defaultMagazine && inventoryAmmunition > 0)
         {
             int diff = defaultMagazine - actualMagazine;
             if (diff <= inventoryAmmunition)
             {
+                vfxPlayer.PlayOneShot(reload, 0.3f);
                 gunAnim.SetTrigger("Reload");
                 actualMagazine += diff;
                 inventoryAmmunition -= diff;
