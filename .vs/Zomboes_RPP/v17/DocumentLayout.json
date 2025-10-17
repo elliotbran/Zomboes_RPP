@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ellio\\Documents\\Github\\Zomboes_RPP\\",
+  "WorkspaceRootPath": "C:\\Users\\ellio\\Documents\\Github Projects\\Zomboes_RPP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github\\zomboes_rpp\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github projects\\zomboes_rpp\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\ellio\\Documents\\Github\\Zomboes_RPP\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\ellio\\Documents\\Github Projects\\Zomboes_RPP\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\ellio\\Documents\\Github\\Zomboes_RPP\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\ellio\\Documents\\Github Projects\\Zomboes_RPP\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ViewState": "AgIAAIAAAAAAAAAAAAAswI4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
