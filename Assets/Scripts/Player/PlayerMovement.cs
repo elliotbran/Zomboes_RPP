@@ -47,6 +47,10 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    public AudioClip hurtSound;
+    AudioSource playerAudioSource;
+
+
     public MovementState state;
     public enum MovementState
     {
@@ -57,6 +61,9 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
+        playerAudioSource = GetComponent<AudioSource>();
+        Time.timeScale = 1;
+
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
@@ -122,6 +129,8 @@ public class PlayerMovement : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        playerAudioSource.PlayOneShot(hurtSound, 0.2f);
+
         Debug.Log("Player Health: " + currentHealth);
 
         if (currentHealth <= 0)
@@ -132,6 +141,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         Debug.Log("Player muerto");
         Time.timeScale = 0;
         deadscreen.SetActive(true);

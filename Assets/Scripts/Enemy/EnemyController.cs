@@ -16,8 +16,12 @@ public class EnemyController : MonoBehaviour
 
     public int life = 100;
 
+    public AudioClip zombies;
+    AudioSource audioSource;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         iA = GetComponent<NavMeshAgent>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
@@ -31,6 +35,21 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // Reproducir sonido de los zombies si hay vivos en la escena
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0 && !audioSource.isPlaying)
+        {
+            audioSource.clip = zombies;
+            audioSource.volume = 0.025f;
+            audioSource.Play();
+            // Pitch random para que no suene tan repetitivo
+            audioSource.pitch = Random.Range(0.8f, 1.2f);
+        }
+        else if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+
         distance = Vector3.Distance(iA.transform.position, objective.position);
         if (distance < range)
         {

@@ -15,6 +15,10 @@ public class RoundManager : MonoBehaviour
 
     public TextMeshProUGUI roundText;
     public TextMeshProUGUI enemiesLeftText;
+    public TextMeshProUGUI playerHealthText;
+
+    public Gun gunScript;
+    public PlayerMovement playerMovementScript;  
 
     private void Awake()
     {
@@ -25,6 +29,14 @@ public class RoundManager : MonoBehaviour
     void Start()
     {
         StartRound();    
+    }
+
+    private void Update()
+    {
+        if (playerHealthText != null)
+        {
+            playerHealthText.text = "Salud: " + playerMovementScript.currentHealth;
+        }        
     }
 
     void StartRound()
@@ -65,6 +77,8 @@ public class RoundManager : MonoBehaviour
 
     void NextRound()
     {
+        playerMovementScript.currentHealth = playerMovementScript.maxHealth;
+        gunScript.inventoryAmmunition += 30;
         round++;
         enemiesToSpawn++;
         StartRound();
@@ -72,6 +86,7 @@ public class RoundManager : MonoBehaviour
 
     void UpdateUI()
     {
+        
         if (roundText != null)
         {
             roundText.text = "Ronda: " + round;
