@@ -20,16 +20,11 @@ public class MenuManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void Exit()
     {
        Application.Quit();
-    }
-
-    public void BackMainMenu()
-    {
-        SceneManager.LoadScene(0);
     }
 }
