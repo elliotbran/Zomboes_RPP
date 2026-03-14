@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\assets\\scripts\\menus\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menus\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github\\zomboes_rpp\\assets\\scripts\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github\\zomboes_rpp\\assets\\scripts\\player\\weapons\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\assets\\scripts\\player\\weapons\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\weapons\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github\\zomboes_rpp\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github\\zomboes_rpp\\assets\\scripts\\player\\playercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\assets\\scripts\\player\\playercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github\\zomboes_rpp\\assets\\scripts\\rounds\\roundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\assets\\scripts\\rounds\\roundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rounds\\roundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|c:\\users\\ellio\\documents\\github\\zomboes_rpp\\assets\\scripts\\menus\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D11CA044-8BBA-96BC-EA41-D00E20501D14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menus\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,24 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "MenuManager.cs",
               "DocumentMoniker": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\Assets\\Scripts\\Menus\\MenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Menus\\MenuManager.cs",
               "ToolTip": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\Assets\\Scripts\\Menus\\MenuManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Menus\\MenuManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T23:32:43.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlayerCamera.cs",
               "DocumentMoniker": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\Assets\\Scripts\\Player\\PlayerCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerCamera.cs",
@@ -59,12 +59,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerCamera.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T23:21:05.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T23:21:05.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\Assets\\Scripts\\Enemy\\EnemyController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyController.cs",
@@ -77,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Gun.cs",
               "DocumentMoniker": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\Assets\\Scripts\\Player\\Weapons\\Gun.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Weapons\\Gun.cs",
@@ -85,12 +84,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Weapons\\Gun.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwCcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T22:44:17.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T22:44:17.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RoundManager.cs",
               "DocumentMoniker": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\Assets\\Scripts\\Rounds\\RoundManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rounds\\RoundManager.cs",
@@ -98,12 +96,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Rounds\\RoundManager.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T22:43:04.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T22:43:04.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\ellio\\Documents\\GitHub\\Zomboes_RPP\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
@@ -111,8 +108,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAQwDEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T13:03:11.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T13:03:11.615Z"
             }
           ]
         }
